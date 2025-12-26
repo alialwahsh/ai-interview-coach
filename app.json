@@ -1,15 +1,33 @@
 {
   "expo": {
-    "name": "ai-interview-coach",
-    "slug": "ai-interview-coach",
+    "name": "Interview AI Coach",
+    "slug": "interview-ai-coach",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
     "scheme": "aiinterviewcoach",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "extra": {
+      "EXPO_PUBLIC_API_BASE": "https://ai-interviewer-uiqn.onrender.com",
+      "privacyUrl": "https://elated-skipjack-874.notion.site/Privacy-Policy-Interview-AI-Coach-2aa3a5d5453d8094ba86e8538c2b065f",
+      "termsUrl": "https://www.notion.so/Terms-of-Use-Interview-AI-Coach-2aa3a5d5453d8021a700e034a8a1549d",
+      "router": {},
+      "eas": {
+        "projectId": "fb086aaf-5948-4fe7-857c-ed21ac226223"
+      }
+    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.ceoali.aiinterviewcoach",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "This app uses the microphone so you can answer interview questions verbally during practice sessions.",
+        "NSSpeechRecognitionUsageDescription": "This app uses speech recognition to transcribe your spoken answers into text and provide feedback.",
+        "NSPhotoLibraryUsageDescription": "This app may access your photo library only if you choose to upload or attach media during your practice.",
+        "NSCameraUsageDescription": "This app may access the camera only if you choose features that involve recording or capturing media.",
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +37,11 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.ceoali.aiinterviewcoach"
     },
     "web": {
       "output": "static",
@@ -38,7 +60,8 @@
             "backgroundColor": "#000000"
           }
         }
-      ]
+      ],
+      "expo-speech-recognition"
     ],
     "experiments": {
       "typedRoutes": true,

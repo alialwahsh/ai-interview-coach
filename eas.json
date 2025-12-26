@@ -1,0 +1,25 @@
+{
+  "cli": {
+    "version": ">= 7.0.0",
+    "appVersionSource": "remote"
+  },
+  "build": {
+    "production": {
+      "ios": {
+        "resourceClass": "medium"
+      },
+      "android": {
+        "resourceClass": "medium"
+      },
+      "autoIncrement": true
+    }
+  },
+  "submit": {
+    "production": {
+      "ios": {
+        "appleId": "aliahr2017@gmail.com",
+        "ascAppId": "6755209881"
+      }
+    }
+  }
+}
